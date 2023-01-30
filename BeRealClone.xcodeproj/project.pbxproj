@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		18B8249029885F2A00EE5319 /* BeRealCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8248F29885F2A00EE5319 /* BeRealCloneApp.swift */; };
-		18B8249229885F2A00EE5319 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8249129885F2A00EE5319 /* ContentView.swift */; };
+		18B8249229885F2A00EE5319 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8249129885F2A00EE5319 /* MainView.swift */; };
 		18B8249429885F2D00EE5319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B8249329885F2D00EE5319 /* Assets.xcassets */; };
 		18B8249729885F2D00EE5319 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B8249629885F2D00EE5319 /* Preview Assets.xcassets */; };
+		18B8249F29885F4F00EE5319 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8249E29885F4F00EE5319 /* Header.swift */; };
+		18B824A2298861AD00EE5319 /* PostHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B824A1298861AD00EE5319 /* PostHeader.swift */; };
+		18B824A4298861C700EE5319 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B824A3298861C600EE5319 /* Post.swift */; };
+		18B824A62988666F00EE5319 /* PostFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B824A52988666F00EE5319 /* PostFeed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18B8248C29885F2A00EE5319 /* BeRealClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeRealClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B8248F29885F2A00EE5319 /* BeRealCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeRealCloneApp.swift; sourceTree = "<group>"; };
-		18B8249129885F2A00EE5319 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18B8249129885F2A00EE5319 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		18B8249329885F2D00EE5319 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18B8249629885F2D00EE5319 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18B8249E29885F4F00EE5319 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		18B824A1298861AD00EE5319 /* PostHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeader.swift; sourceTree = "<group>"; };
+		18B824A3298861C600EE5319 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		18B824A52988666F00EE5319 /* PostFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFeed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		18B8248E29885F2A00EE5319 /* BeRealClone */ = {
 			isa = PBXGroup;
 			children = (
+				18B8249D29885F3A00EE5319 /* Components */,
 				18B8248F29885F2A00EE5319 /* BeRealCloneApp.swift */,
-				18B8249129885F2A00EE5319 /* ContentView.swift */,
+				18B8249129885F2A00EE5319 /* MainView.swift */,
 				18B8249329885F2D00EE5319 /* Assets.xcassets */,
 				18B8249529885F2D00EE5319 /* Preview Content */,
 			);
@@ -65,6 +74,25 @@
 				18B8249629885F2D00EE5319 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18B8249D29885F3A00EE5319 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				18B824A0298861A000EE5319 /* Post */,
+				18B8249E29885F4F00EE5319 /* Header.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		18B824A0298861A000EE5319 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				18B824A1298861AD00EE5319 /* PostHeader.swift */,
+				18B824A3298861C600EE5319 /* Post.swift */,
+				18B824A52988666F00EE5319 /* PostFeed.swift */,
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18B8249229885F2A00EE5319 /* ContentView.swift in Sources */,
+				18B8249229885F2A00EE5319 /* MainView.swift in Sources */,
+				18B824A62988666F00EE5319 /* PostFeed.swift in Sources */,
+				18B8249F29885F4F00EE5319 /* Header.swift in Sources */,
+				18B824A2298861AD00EE5319 /* PostHeader.swift in Sources */,
 				18B8249029885F2A00EE5319 /* BeRealCloneApp.swift in Sources */,
+				18B824A4298861C700EE5319 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
